@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #C08F4F;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.advice-box{
+    width: 40%;
+    height: 280px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.advice-box h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.advice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.advice-box p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.advice button{
+    padding: 10px 20px;
+    background-color: #C08F4F;
+    border: 2px solid #9b6723;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.advice button:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px){
+    .advice-box{
+        width: 85%;
+        height: 350px;
+    }
+
+    .advice-box h1{
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .advice button{
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .advice-box{
+        width: 80%;
+        height: 300px;
+    }
+
+    .advice-box h1{
+        margin-top: 20px;
+    }
+
+    .advice button{
+        margin-bottom: 20px;
+    }
+    
+}
